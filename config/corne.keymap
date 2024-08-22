@@ -10,6 +10,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        win_switch: win_switch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI &kp GRAVE>;
+            label = "WIN_SWITCH";
+        };
+
+        terminal: terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_MENU_ESC &kt LCTRL>;
+            label = "TERMINAL";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
