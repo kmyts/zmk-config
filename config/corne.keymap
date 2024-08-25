@@ -102,7 +102,7 @@
 &kp TAB    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp PAGE_UP      &trans   &trans    &trans    &kt RIGHT_BRACKET  &kt LEFT_BRACKET  &kp BSPC
 &trans     &kt NUMBER_4  &kt N5        &kt NUMBER_6  &trans  &kt PAGE_DOWN    &trans   &kp LEFT  &kp DOWN  &kp UP_ARROW       &kp RIGHT         &trans
 &kp LSHFT  &kt NUMBER_1  &kt NUMBER_2  &kt NUMBER_3  &kt N0  &trans           &trans   &trans    &trans    &trans             &trans            &trans
-                                       &kp LGUI      &trans  &kp SPACE        &kp RET  &mo 3     &kp RALT
+                                       &kp LGUI      &trans  &kp SPACE        &kp RET  &trans    &kp RALT
             >;
         };
 
@@ -117,7 +117,7 @@
 &kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &mo 3     &kp SPACE    &kp RET    &trans     &kp RALT
+                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
@@ -128,6 +128,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans           &trans          &trans            &trans      &trans
                         &trans  &trans  &trans    &trans             &trans           &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        adj_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
