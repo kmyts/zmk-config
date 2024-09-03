@@ -100,9 +100,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&win_switch  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp PAGE_UP      &trans   &trans    &trans    &kt RIGHT_BRACKET  &kt LEFT_BRACKET  &kp BSPC
-&terminal    &kt NUMBER_4  &kt N5        &kt NUMBER_6  &trans  &kt PAGE_DOWN    &trans   &kp LEFT  &kp DOWN  &kp UP_ARROW       &kp RIGHT         &trans
-&kp LSHFT    &kt NUMBER_1  &kt NUMBER_2  &kt NUMBER_3  &kt N0  &trans           &trans   &trans    &trans    &trans             &trans            &trans
+&win_switch  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp PAGE_UP      &trans   &trans    &trans    &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp BSPC
+&terminal    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &kp PAGE_DOWN    &trans   &kp LEFT  &kp DOWN  &kp UP_ARROW       &kp RIGHT         &trans
+&kp LSHFT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0  &trans           &trans   &trans    &trans    &trans             &trans            &trans
                                          &kp LGUI      &trans  &kp SPACE        &kp RET  &trans    &kp RALT
             >;
         };
