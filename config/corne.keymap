@@ -103,7 +103,7 @@
 &win_switch  &mt F1 N1  &mt F2 N2   &mt F3 N3   &trans  &kp PAGE_UP      &kp HOME  &trans    &trans    &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp BSPC
 &terminal    &mt F4 N4  &mt F5 N5   &mt F6 N6   &trans  &kp PAGE_DOWN    &kp END   &kp LEFT  &kp DOWN  &kp UP_ARROW       &kp RIGHT         &trans
 &kp LSHFT    &mt F7 N7  &mt F8 N8   &mt F9 N9   &kp N0  &trans           &trans    &trans    &trans    &trans             &trans            &trans
-                                               &kp LGUI         &trans  &kp SPACE        &kp RET   &trans    &kp RALT
+                                    &kp LGUI    &trans  &kp SPACE        &kp RET   &trans    &kp RALT
             >;
         };
 
