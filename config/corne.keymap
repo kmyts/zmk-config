@@ -99,7 +99,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "STICKY_1_LAYER";
             #binding-cells = <0>;
-            bindings = <&trans>, <&trans>, <&tog 1>;
+            bindings = <&mo 1>, <&mo 1>, <&tog 1>;
         };
     };
 
