@@ -72,26 +72,6 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <31 32>;
         };
-
-        up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <3 2>;
-        };
-
-        down {
-            bindings = <&kp DOWN>;
-            key-positions = <14 15>;
-        };
-
-        left {
-            bindings = <&kp LEFT>;
-            key-positions = <13 14>;
-        };
-
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <15 16>;
-        };
     };
 
     behaviors {
@@ -99,7 +79,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "STICKY_1_LAYER";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 1>, <&tog 1>;
+            bindings = <&mo 1>, <&tog 1>;
         };
     };
 
