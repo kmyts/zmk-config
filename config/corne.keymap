@@ -74,15 +74,6 @@
         };
     };
 
-    behaviors {
-        Sticky_1_layer: Sticky_1_layer {
-            compatible = "zmk,behavior-tap-dance";
-            label = "STICKY_1_LAYER";
-            #binding-cells = <0>;
-            bindings = <&mo 1>, <&tog 1>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -94,10 +85,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R            &kp T        &kp Y    &kp U  &kp I      &mt RIGHT_BRACKET O  &mt LEFT_BRACKET P  &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F            &kp G        &kp H    &kp J  &kp K      &kp L                &kp SEMI            &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V            &kp B        &kp N    &kp M  &kp COMMA  &kp DOT              &kp FSLH            &kp ESC
-                         &kp LGUI  &Sticky_1_layer  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &mt RIGHT_BRACKET O  &mt LEFT_BRACKET P  &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L                &kp SEMI            &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT              &kp FSLH            &kp ESC
+                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
 
