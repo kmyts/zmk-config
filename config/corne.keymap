@@ -74,6 +74,20 @@
         };
     };
 
+    behaviors {
+        delayed_cmd_q: delayed_cmd_q {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DELAYED_CMD_Q";
+            bindings = <&kp>, <&none>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <36 1>;
+            tapping-term-ms = <750>;
+            quick-tap-ms = <300>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
