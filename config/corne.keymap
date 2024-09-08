@@ -73,6 +73,10 @@
             key-positions = <31 32>;
         };
     };
+    
+    &mt {
+        tapping-term-ms = <400>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
