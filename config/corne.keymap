@@ -9,6 +9,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping-term-ms = <400>;
+};
+
 / {
     macros {
         win_switch: win_switch {
@@ -72,10 +76,6 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <31 32>;
         };
-    };
-    
-    &mt {
-        tapping-term-ms = <400>;
     };
 
     keymap {
