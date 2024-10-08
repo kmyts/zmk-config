@@ -104,9 +104,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&win_switch  &mt F1 N1  &mt F2 N2  &mt F3 N3  &trans  &kp PAGE_UP      &kp HOME  &trans    &trans    &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp BSPC
-&terminal    &mt F4 N4  &mt F5 N5  &mt F6 N6  &trans  &kp PAGE_DOWN    &kp END   &kp LEFT  &kp DOWN  &kp UP_ARROW       &kp RIGHT         &trans
-&kp LSHFT    &mt F7 N7  &mt F8 N8  &mt F9 N9  &kp N0  &trans           &trans    &trans    &trans    &trans             &trans            &trans
+&win_switch  &mt F1 N1  &mt F2 N2  &mt F3 N3  &trans  &kp PAGE_UP      &kp HOME  &trans    &trans        &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp BSPC
+&terminal    &mt F4 N4  &mt F5 N5  &mt F6 N6  &trans  &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT          &trans            &trans
+&kp LSHFT    &mt F7 N7  &mt F8 N8  &mt F9 N9  &kp N0  &trans           &trans    &trans    &trans        &trans             &trans            &trans
                                    &kp LGUI   &trans  &kp SPACE        &kp RET   &trans    &kp RALT
             >;
 
@@ -133,7 +133,7 @@
         adjust_layer {
             bindings = <
 &bt BT_CLR      &bt BT_PRV   &bt BT_NXT  &trans  &trans  &trans    &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_PREVIOUS  &kp C_PLAY_PAUSE  &kt C_NEXT  &kt C_MUTE
-&bt BT_CLR_ALL  &trans       &trans      &trans  &trans  &trans    &trans             &trans           &prev_page      &next_page        &trans      &trans
+&bt BT_CLR_ALL  &trans       &trans      &trans  &trans  &trans    &prev_page         &trans           &trans          &next_page        &trans      &trans
 &trans          &bootloader  &trans      &trans  &trans  &trans    &trans             &trans           &trans          &trans            &trans      &trans
                                          &trans  &trans  &trans    &trans             &trans           &trans
             >;
